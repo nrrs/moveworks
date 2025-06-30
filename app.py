@@ -72,7 +72,7 @@ def slack_commands():
     elif text.startswith("users"):
         thread1 = threading.Thread(target=users_worker_function, args=(channel_id, filters))
         thread1.start() # Start the threads
-    elif text.startswith("domains"):
+    elif text.startswith("domain"):
         filters["columns"] = ["domain", "count"]
         thread1 = threading.Thread(target=domain_worker_function, args=(channel_id, filters))
         thread1.start() # Start the threads
