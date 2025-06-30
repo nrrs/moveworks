@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+requests
+pandas
+argparse
+datetime
+slack-sdk>=3.12,<4
